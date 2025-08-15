@@ -1,0 +1,11 @@
+{
+  "siteDomain": "xxx",
+  "pluginId": "xxx",
+  "pluginSecret": "xxx",
+  "resources": [
+    {
+      "id": "excel_import",
+      "entry": "./src/features/ExcelImport/index.tsx"
+    }
+  ]
+}
