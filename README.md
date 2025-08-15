@@ -1,20 +1,30 @@
+## 环境准备
+
+1. 因为插件存在跨域问题无法直接访问 openAPI 服务，所以请提前准备后端代理服务进行开发。
+
+2. 将步骤 1 中的代理服务域名配置到 `src/constants/index.ts` 中的 `requestHost`。
+
+2. 插件开发详细内容请参考 [开发者手册](https://project.feishu.cn/b/helpcenter/1p8d7djs/nh4exbsn)。
+
 ## 启动项目
 
 1. 打开「飞书项目·开发者后台」相应插件详情页。
 
 2. 左侧导航切换到「插件功能」tab，添加对应功能构成并完善配置。
 
-3. 将 `plugin.config.json` 文件的 `pluginId` 设置为你的 pluginid
+3. 将 `plugin.config.json` 文件的 `pluginId` 设置为你的 pluginid。
 
-4. 运行 `lpm config set pluginSecret xxx` 命令设置秘钥
+4. 运行 `lpm config set pluginSecret xxx` 命令设置秘钥。
 
-5. 确认 `plugin.config.json` 文件 `resources` 字段中的所有 `id` 与开发者后台插件构成中的 `resourceId` 一一对应
+5. 确认 `plugin.config.json` 文件 `resources` 字段中的所有 `id` 与开发者后台插件构成中的 `resourceId` 一一对应。
 
-6. 在项目目录下运行：`lpm start`
+6. 替换 `src/constants/index.ts` 文件中的配置信息。
 
-7. 然后访问「飞书项目·开发者后台」首页，在页面左下角启用插件的本地调试模式。
+7. 在项目目录下运行：`lpm start`。
 
-8. 最后打开「飞书项目」，预览插件的效果。
+8. 然后访问「飞书项目·开发者后台」首页，在页面左下角启用插件的本地调试模式。
+
+9. 最后打开「飞书项目」，预览插件的效果。
 
 ## 发布你的插件
 
